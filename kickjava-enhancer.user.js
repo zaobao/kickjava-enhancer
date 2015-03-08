@@ -3,7 +3,7 @@
 // @namespace   kickjava enhancer
 // @include     http://kickjava.com/*.java
 // @include     http://kickjava.com/*.java.htm
-// @version     1.1
+// @version     1.1.1
 // @grant       none
 // ==/UserScript==
 
@@ -119,6 +119,6 @@ function showLineNum() {
 
 if (getCookie("line-number-display") == "onshow") {
 	showLineNum();
-} else {
+} else if (getCookie("line-number-display") == "hidden") {
 	hideLineNum();
 }
